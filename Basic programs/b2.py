@@ -9,8 +9,8 @@ def vol (r,h):
 def surface(r,h):
     surface=((2*3.14*r)*h)+((3.14*r**2)*2)
     return surface
-r=float(input("Enter the Radius:"))
-h=float(input("Enter the height:"))
+r= float(input("Enter the Radius:"))
+h= float(input("Enter the height:"))
 volume=vol(r,h)
 area=surface(r,h)
 print("The volume is",volume)
