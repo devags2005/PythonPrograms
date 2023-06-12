@@ -3,10 +3,15 @@ Formula:
 Volume = pi * radius * radius * height
 Surface area of a cylinder = ((2*pi*radius)*height) + ((pi*radius**2)*2)'''
 
-r=int(input("Enter radius:"))
-h=int(input("Enter height:"))
-def c(r,h):
-    volume=3.14*r*r*h
-    surfacearea=(2*3.14*r*h)+(2*3.14*r*r)
-    print("volume and area is:",volume,surfacearea)
-c(r,h)
+def vol (r,h):
+    vol=3.14*r*r*h
+    return vol
+def surface(r,h):
+    surface=((2*3.14*r)*h)+((3.14*r**2)*2)
+    return surface
+r=float(input("Enter the Radius:"))
+h=float(input("Enter the height:"))
+volume=vol(r,h)
+area=surface(r,h)
+print("The volume is",volume)
+print("The surface area is",area)
